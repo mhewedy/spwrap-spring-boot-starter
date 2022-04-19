@@ -10,7 +10,7 @@ public class Config {
     // DAO bean will be defined by the starter with default properties 
     // you can override the properties using `spwrap.` prefixed properties
     @Bean
-    public CustomerDAO customerDAO(DAO dao){
+    public CustomerDAO customerDAO(DAO dao) {
         return dao.create(CustomerDAO.class);
     }
 }
